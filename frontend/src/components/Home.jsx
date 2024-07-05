@@ -22,7 +22,7 @@ const Home = ({ setIsAuthenticated }) => {
   const [notification, setNotification] = useState('');
   const navigate = useNavigate();
   const backendUrl =
-    "https://weather-outfit-backend.vercel.app";
+    "https://weather-outfit-backend-two.vercel.app/";
   // Verify token on component mount
   useEffect(() => {
     const fetchData = async () => {
