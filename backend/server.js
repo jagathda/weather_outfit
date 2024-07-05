@@ -24,6 +24,9 @@ app.use(cors());
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use(passport.initialize());
+app.use(cors({
+  origin: 'https://weather-outfit-flame.vercel.app/'
+}));
 
 // routes
 app.use("/api/auth", authRoutes);
