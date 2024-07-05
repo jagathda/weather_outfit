@@ -6,7 +6,7 @@ const Register = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
-  const backendUrl = "https://weather-outfit-backend-two.vercel.app/";
+  const backendUrl = "https://weather-outfit-server.vercel.app/";
   const handleRegister = async () => {
     try {
       await axios.post(`${backendUrl}/api/auth/register`, {

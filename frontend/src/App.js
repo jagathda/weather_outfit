@@ -19,7 +19,7 @@ import CityList from "./components/CityList";
 function App() {
   // State to track if the user is authenticated
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const backendUrl = "https://weather-outfit-backend-two.vercel.app/";
+  const backendUrl = "https://weather-outfit-server.vercel.app/";
   // Verify the token on initial load (if token exists)
   useEffect(() => {
     const verifyToken = async () => {
